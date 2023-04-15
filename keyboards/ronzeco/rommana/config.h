@@ -15,12 +15,6 @@
  */
 #pragma once
 
-
-/* key matrix size */
-#define MATRIX_ROWS 6
-#define MATRIX_COLS 5
-
-
 /* Serial settings */
 #define USE_SERIAL
 /* Split handedness */
