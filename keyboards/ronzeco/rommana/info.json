@@ -21,6 +21,7 @@
         "wpm": false
     },
     "usb": {
+        "device_version": "1.0.0",
         "vid": "0x524E",
         "pid": "0x524D"
     },
