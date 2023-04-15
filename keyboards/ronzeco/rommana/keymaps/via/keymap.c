@@ -27,7 +27,7 @@ enum custom_layers {
 };
 
 enum custom_keycodes {
-  ALT_TAB,
+  ALT_TAB = QK_USER,
   CTRL_TAB
 };
 
@@ -71,7 +71,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   return true;
 }
 
-void matrix_scan_user(void) { // The very important timer.
+void housekeeping_task_user(void) { // The very important timer.
   if (is_alt_tab_active) {
     if (timer_elapsed(alt_tab_timer) > 500) {
       unregister_code(KC_LALT);
