@@ -15,7 +15,13 @@
  */
 #pragma once
 
+#if !defined(INIT_EE_HANDS_LEFT) && !defined(INIT_EE_HANDS_RIGHT)
+#    error "You need to configure EE_HANDS"
+#endif
+
 /* Serial settings */
 #define USE_SERIAL
 /* Split handedness */
 #define EE_HANDS
+#define SOFT_SERIAL_PIN GP0 /* SERIAL_USART_TX_PIN */
+#define SELECT_SOFT_SERIAL_SPEED 1
