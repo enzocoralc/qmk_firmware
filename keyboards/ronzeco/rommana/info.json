@@ -25,10 +25,10 @@
         "vid": "0x524E",
         "pid": "0x524D"
     },
-    "diode_direction": "COL2ROW",
+     "diode_direction": "COL2ROW",
     "matrix_pins": {
         "cols": [ "GP8", "GP7", "GP6", "GP5", "GP4" ],
-        "rows": [ "GP14", "GP15", "GP26" ]
+        "rows": [ "GP26", "GP15", "GP14" ]
     },
     "oneshot": {
         "tap_toggle": 5,
@@ -41,8 +41,7 @@
         },
         "transport": {
             "protocol": "serial_usart"
-        },
-        "soft_serial_pin": "GP0"
+        }
     },
     "layouts": {
         "LAYOUT": {
@@ -65,23 +64,23 @@
                 { "matrix": [2,3], "x": 3, "y": 2},
                 { "matrix": [2,4], "x": 4, "y": 3},
 
-                { "matrix": [3,0], "x": 5, "y": 0},
-                { "matrix": [3,1], "x": 6, "y": 0},
+                { "matrix": [3,0], "x": 9, "y": 0},
+                { "matrix": [3,1], "x": 8, "y": 0},
                 { "matrix": [3,2], "x": 7, "y": 0},
-                { "matrix": [3,3], "x": 8, "y": 0},
-                { "matrix": [3,4], "x": 9, "y": 0},
+                { "matrix": [3,3], "x": 6, "y": 0},
+                { "matrix": [3,4], "x": 5, "y": 0},
 
-                { "matrix": [4,0], "x": 5, "y": 1},
-                { "matrix": [4,1], "x": 6, "y": 1},
+                { "matrix": [4,0], "x": 9, "y": 1},
+                { "matrix": [4,1], "x": 8, "y": 1},
                 { "matrix": [4,2], "x": 7, "y": 1},
-                { "matrix": [4,3], "x": 8, "y": 1},
-                { "matrix": [4,4], "x": 9, "y": 1},
+                { "matrix": [4,3], "x": 6, "y": 1},
+                { "matrix": [4,4], "x": 5, "y": 1},
 
-                { "matrix": [5,0], "x": 5, "y": 3},
-                { "matrix": [5,1], "x": 6, "y": 2},
+                { "matrix": [5,0], "x": 6, "y": 3},
+                { "matrix": [5,1], "x": 8, "y": 2},
                 { "matrix": [5,2], "x": 7, "y": 2},
-                { "matrix": [5,3], "x": 8, "y": 2},
-                { "matrix": [5,4], "x": 6, "y": 3}
+                { "matrix": [5,3], "x": 6, "y": 2},
+                { "matrix": [5,4], "x": 5, "y": 3}
             ]
         }
     }
